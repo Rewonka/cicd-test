@@ -26,4 +26,4 @@ jobs:
       # Step 3: Deploy to S3
       - name: Deploy to S3 bucket
         run: |
-          aws s3 sync . s3://rewonka-test --delete
+          aws s3 sync . arn:aws:s3:::rewonka-deploytest --delete
